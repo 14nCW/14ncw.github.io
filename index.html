@@ -1,9 +1,58 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<html lang="pl">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="../URIEL-strona/fontawesome/css/all.css" />
+  <link rel="icon" href="../URIEL-strona/materials/URIEL.svg" />
+  <title class="output"></title>
 
-</body>
+  <head> </head>
+
+  <body background="materials/background.png" style="overflow-x: hidden;
+  overflow-y: hidden;">
+    <div class="background">
+        <img src="materials/windTurbine.png" alt="">
+    </div>
+    <div class="menu">
+        <nav>
+          <ul class="nav_links">
+            <a href="subPages/aboutUs.html">
+              <li>o nas</li>
+            </a>
+            <div class="dropdown">
+              <li>projekty</li>
+              <div class="dropdown-content">
+                <a href="https://www.bbfw.pl">
+                  <img src="materials/bbfw logo.svg" alt="" />
+                </a>
+                <a href="https://www.dkfw.pl">
+                  <img src="materials/dkfw logo.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <a href="subPages/team.html">
+              <li>zespół</li>
+            </a>
+            <a href="subPages/cooperation.html">
+              <li>współpraca</li>
+            </a>
+            <a href="subPages/contact.html">
+              <li>kontakt</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+  </body>
+  <script src="script/resize.js"></script>
+
+  <script>
+    setInterval(runFunction, 1000);
+
+    function runFunction() {
+      if (screen.width <= 800 && screen.width < screen.height) {
+        document.location = "m.index.html";
+      }
+    }
+  </script>
 </html>

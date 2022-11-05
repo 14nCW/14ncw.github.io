@@ -1,0 +1,54 @@
+
+#scrollable {
+  position: absolute;
+  height: max-content;
+  width: max-content;
+}
+
+.content {
+  margin-left: 0;
+  width: 100vw;
+}
+
+.title {
+  margin-left: 25vw;
+  margin-bottom: 0;
+}
+
+.worker {
+  position: relative;
+  height: max-content;
+  margin: 5vw;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: 20vw auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.worker img {
+  position: absolute;
+  width: 10%;
+  border-radius: 4vh;
+  left: -3.2vw;
+  bottom: 1vw;
+}
+
+.worker .text {
+  font-family: "montserrat";
+  font-weight: normal;
+  text-align: justify;
+  color: #3b3b3b;
+  padding: 4vw 2vw 4vw 0;
+  font-size: 2vh;
+  line-height: 3vh;
+}
+
+
+.worker.one {
+  background-color: rgb(223, 161, 223);
+}
+
+.worker.two {
+  background-color: rgb(48, 28, 48);
+}

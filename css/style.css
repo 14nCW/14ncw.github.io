@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 60vh;
+  margin-left: 25vw;
+  width: 75vw;
+  height: max-content;
+}
+
+.text {
+  font-family: "montserrat";
+  font-weight: normal;
+  color: #666666;
+  font-size: 2vh;
+  line-height: 2.5vh;
+}
+
+.title {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: 1.5vh;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: min-content;
+}
+
+.background {
+  position: relative;
+  top: 0;
+  width: max-content;
+  height: max-content;
+  scale: 2;
+  z-index: 1;
+}
+
+.background img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3vh;
+  color: #414141;
+  text-align: center;
+}
+
+h1 span {
+  background-color: #0e5faf53;
+}
+
+/*
+  /""""""""""""""""""""""""""""""""""""""\ 
+ |                  menu                  |
+  \,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,/ 
+*/
+
+.menu {
+  background-color: rgba(114, 169, 223, 0.56);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 70vw;
+  height: 3vh;
+  top: 10vh;
+  right: 0;
+  z-index: 2;
+}
+
+li {
+  text-decoration: none;
+}
+
+.menu nav {
+  position: absolute;
+  width: 100vw;
+  /* top: 35%; */
+  height: 100%;
+}
+
+.nav_links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  font-size: 1.5vh;
+}
+
+.nav_links a {
+  text-align: center;
+  color: white;
+  height: 3vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.nav_links div {
+  text-align: center;
+  color: white;
+  height: 3vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  top: 100%;
+  left: 15%;
+  position: absolute;
+  display: none;
+  min-width: 70%;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  background-color: rgba(114, 169, 223, 0.56);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  color: black;
+  padding: 15% 20%;
+  display: block;
+
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.dropdown-content img {
+  top: -2vh;
+  position: relative;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/subpages/coopetarionCSS.css" />
+  <link rel="stylesheet" href="fontawesome\css\all.css" />
+  <link rel="icon" href="materials/URIEL.svg" />
+  <title class="output"></title>
+
+  <head> </head>
+
+  <body background="../materials/background.png">
+    <div class="background">
+      <img src="../materials/windTurbine.png" alt="" />
+    </div>
+    <!-- <div id="scrollable"> -->
+      <div class="menu">
+        <nav>
+          <ul class="nav_links">
+            <a href="../subPages/aboutUs.html">
+              <li>o nas</li>
+            </a>
+            <div class="dropdown">
+              <li>projekty</li>
+              <div class="dropdown-content">
+                <a href="https://www.bbfw.pl">
+                  <img src="../materials/bbfw logo.svg" alt="" />
+                </a>
+                <a href="https://www.dkfw.pl">
+                  <img src="../materials/dkfw logo.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <a href="../subPages/team.html">
+              <li>zespół</li>
+            </a>
+            <a href="../subPages/cooperation.html">
+              <li>współpraca</li>
+            </a>
+            <a href="../subPages/contact.html">
+              <li>kontakt</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="title">
+          <h1><span>współpraca</span></h1>
+        </div>
+        <div class="QiA">
+          <div class="question">
+            <h3>czego szukamy?</h3>
+          </div>
+          <div class="answer">
+            <h3>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </h3>
+          </div>
+        </div>
+        <div class="QiA">
+          <div class="question">
+            <h3>jak się skontaktować?</h3>
+          </div>
+          <div class="answer">
+            <h3>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </h3>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+  </body>
+  <script src="script/resize.js"></script>
+
+  <script>
+    setInterval(runFunction, 1000);
+
+    function runFunction() {
+      if (screen.width <= 800 && screen.width < screen.height) {
+        document.location = "../m.index.html";
+      }
+    }
+
+    var div = document.getElementsByClassName("content");
+    var wrapper = document.body;
+    wrapper.addEventListener("wheel", wheelEvent);
+
+    function wheelEvent(e) {
+      var space =
+        wrapper.scrollHeight - wrapper.offsetHeight - wrapper.scrollTop;
+      if (e.deltaY < 0) {
+        if (wrapper.scrollTop == 0) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      } else if (space <= 0) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    }
+  </script>
+</html>

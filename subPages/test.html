@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="../css/subpages/contactCSS.css" />
+<link rel="stylesheet" href="../fontawesome\css\all.css" />
+<link rel="icon" href="materials/URIEL.svg" />
+<style>
+    body {
+        /* height: 100vh;
+        width: 100vw; */
+        align-items: center;
+        /* justify-content: center; */
+        /* display: flex; */
+    }
+    
+    #test_box {
+        position: absolute;
+        display: flex;
+        /* margin: auto; */
+        min-height: 300px;
+        min-width: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #test_box h1 {
+        font-size: 200%;
+        margin: 10%;
+        font-family: "montserrat";
+        font-weight: bolder;
+        color: rgb(100, 58, 58);
+    }
+</style>
+<title class="output"></title>
+
+<head> </head>
+
+<body>
+    <div id="test_box">
+        <h1 id="h1">you found an easter egg!</h1>
+    </div>
+</body>
+
+<script>
+    // ==================
+    // RGB
+    // ==================
+
+    let colors = [168, 50, 50];
+    let controll_num;
+
+    document.getElementById("test_box").style.backgroundColor =
+        "rgb(" + colors[0] + "," + colors[1] + "," + colors[2] + ")";
+
+    RGB();
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    async function RGB() {
+        while (true) {
+            for (i = 0; i < 3; i++) {
+                if (colors[i] == 168) {
+                    controll_num = -1;
+                } else {
+                    controll_num = 1;
+                }
+
+                for (j = 0; j < 118; j++) {
+                    await sleep(10);
+                    colors[i] += controll_num;
+                    document.getElementById("test_box").style.backgroundColor =
+                        "rgb(" + colors[0] + "," + colors[1] + "," + colors[2] + ")";
+                    document.getElementById("h1").style.color =
+                        "rgb(" + colors[1] + "," + colors[2] + "," + colors[0] + ")";
+                }
+            }
+        }
+    }
+
+    let l = 0;
+    let div_height_pos = 0;
+    let div_width_pos = 0;
+    let controll_l, controll_k;
+
+    position();
+    async function position() {
+        while (true) {
+            await sleep(1)
+            let div_bottom = document.getElementById("test_box").offsetTop + document.getElementById("test_box").offsetHeight;
+            let div_left = document.getElementById("test_box").offsetLeft;
+
+
+            if (div_bottom > document.documentElement.clientHeight) {
+                controll_l = -1;
+            } else if (div_bottom - document.getElementById("test_box").offsetHeight == 0) {
+                controll_l = 1;
+            }
+
+            if (div_left <= 0) {
+                controll_k = 1;
+            } else if (div_left + document.getElementById("test_box").offsetWidth > document.documentElement.clientWidth) {
+                controll_k = -1;
+            }
+
+            div_height_pos += controll_l;
+            div_width_pos += controll_k;
+
+            document.getElementById("test_box").style.left = div_width_pos + "px";
+            document.getElementById("test_box").style.top = div_height_pos + "px";
+
+            console.log(div_width_pos, document.documentElement.clientWidth);
+        }
+    }
+
+    // =================
+    // \RGB 
+    // =================
+
+    // let R_text = 220; //120
+    // let G_text = 131; //191
+    // let B_text = 49; //49
+
+    // let R_bckg = 120; //220
+    // let G_bckg = 191; //131
+    // let B_bckg = 49; //49
+
+    // document.getElementById("test_box").style.backgroundColor =
+    //     "rgb(" + R_bckg + "," + G_bckg + "," + B_bckg + ")";
+
+    // document.getElementById("h1").style.color =
+    //     "rgb(" + R_text + "," + G_text + "," + B_text + ")";
+
+    // setInterval(testfunction, 1);
+
+    // function testfunction() {
+    //     R_bckg++; //220
+    //     G_bckg++; //131
+    //     B_bckg++; //49
+    //     document.getElementById("test_box").animate =
+    //         "<style> #test_box {backgroundColor: rgb(" +
+    //         R_bckg +
+    //         "," +
+    //         G_bckg +
+    //         "," +
+    //         B_bckg +
+    //         ") }</style>";
+    // }
+
+    //====================//
+    //    first method    //
+    //====================//
+
+    // function testfunction() {
+    //     // wysokość
+    //     // DODAĆ MINIMUM WIDTH
+    //     let h1_size = Math.floor(
+    //         document.getElementById("test_box").clientHeight / 30
+    //     );
+    //     document.getElementById("h1").style.fontSize = h1_size + "vh";
+
+    //     let reference = document.getElementById("test_box").clientHeight;
+    //     setTimeout(changecolor(reference));
+    // }
+
+    // async function changecolor(reference) {
+    //     await new Promise((r) => setTimeout(r, 0));
+    //     setTimeout
+    //     let compare = document.getElementById("test_box").clientHeight;
+    //     let difference = compare - reference;
+
+    //     if (reference != compare) {
+    //         // R_text += Math.floor(difference * 1.42);
+    //         // G_text += Math.floor(difference * 1.42);
+    //         // R_bckg += Math.floor(difference * 1.42);
+    //         // G_bckg += Math.floor(difference * 1.42);
+
+    //         R_text += (difference / 12);
+    //         G_text += (difference / 20);
+    //         R_bckg += (difference / 12);
+    //         G_bckg += (difference / 20);
+    //         console.log(difference);
+    //         console.log("text RGB(" + R_text + "," + G_text + "," + B_text + ")");
+    //         console.log("box  RGB(" + R_bckg + "," + G_bckg + "," + B_bckg + ")");
+    //     }
+
+    //     document.getElementById("test_box").style.backgroundColor =
+    //         "rgb(" + R_bckg + "," + G_bckg + "," + B_bckg + ")";
+
+    //     document.getElementById("h1").style.color =
+    //         "rgb(" + R_text + "," + G_text + "," + B_text + ")";
+    // }
+</script>
+
+</html>
