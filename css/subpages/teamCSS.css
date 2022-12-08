@@ -35,10 +35,10 @@
 }
 
 .worker .text {
-  font-family: "montserrat";
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   text-align: justify;
-  color: #3b3b3b;
+  color: #ffffff;
   padding: 4vw 2vw 4vw 0;
   font-size: 2vh;
   line-height: 3vh;
@@ -46,9 +46,21 @@
 
 
 .worker.one {
-  background-color: rgb(223, 161, 223);
+  background-color: rgb(134, 134, 134);
 }
 
 .worker.two {
-  background-color: rgb(48, 28, 48);
+  background-color: rgb(83, 71, 39);
+}
+
+.worker.three {
+  background-color: rgb(127, 96, 74);
+}
+
+.worker.four {
+  background-color: rgb(202, 197, 193);
+}
+
+.worker.five {
+  background-color: rgb(77, 77, 77);
 }

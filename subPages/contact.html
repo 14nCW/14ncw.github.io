@@ -6,124 +6,90 @@
   <link rel="stylesheet" href="../css/subpages/contactCSS.css" />
   <link rel="stylesheet" href="../fontawesome\css\all.css" />
   <link rel="icon" href="materials/URIEL.svg" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../script/resize.js"></script>
   <title class="output"></title>
 
   <head> </head>
 
-  <body background="../materials/background.png">
-    <div class="background" id="background">
+  <!-- background="../materials/background.png" -->
+  <body style="overflow-x: hidden; overflow-y: hidden">
+    <a class="logo" href="../index.html"
+      ><img src="../materials/URIEL_niebieskie.png" alt=""
+    /></a>
+
+    <!-- <video
+      class="video"
+      src="../materials/contact/Untitled.mp4"
+      loop
+      autoplay
+      muted
+    ></video> -->
+    <div class="turbine">
       <img src="../materials/windTurbine.png" alt="" />
     </div>
-    <div class="menu">
-      <nav>
-        <ul class="nav_links">
-          <a href="../subPages/aboutUs.html">
-            <li>o nas</li>
+
+
+    <nav class="menu">
+      <ul>
+        <li class="menu-content">
+          <a href="../subPages/aboutUs.html" >
+            o nas
           </a>
-          <div class="dropdown">
-            <li>projekty</li>
-            <div class="dropdown-content">
-              <a href="https://www.bbfw.pl">
-                <img src="../materials/bbfw logo.svg" alt="" />
-              </a>
-              <a href="https://www.dkfw.pl">
-                <img src="../materials/dkfw logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <a href="../subPages/team.html">
-            <li>zespół</li>
-          </a>
-          <a href="../subPages/cooperation.html">
-            <li>współpraca</li>
-          </a>
-          <a href="../subPages/contact.html">
-            <li>kontakt</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
+        </li>
+        <li class="hide menu-content" id="projekty">
+          <a href="">projekty</a>
+          <ol>
+            <li id="dropdown"><a href="https://bbfw.pl">  bbfw</a></li>
+            <li><a href="https://www.dkfw.pl">dkfw</a></li>
+            <!-- <li class="controll"><a href="">projekty</a></li> -->
+          </ol>
+        </li>
+        <li class="menu-content">
+            <a href="../subPages/team.html">zespół
+            </a>
+          </li>
+          <li class="menu-content">
+            <a href="../subPages/cooperation.html">współpraca</a>
+          </li>
+          <li class="menu-content">
+            <a href="../subPages/contact.html">galeria
+            </a>
+          </li>
+          <li class="menu-content" >
+            <a href="../subPages/contact.html" class="active">kontakt
+            </a>
+          </li>
+      </ul>
+    </nav>
+
+
     <div class="content" id="content">
-      <div class="title">
-        <h1><span>napisz do nas</span></h1>
-      </div>
-      <form action="../mail.php" method="POST" class="contactBox">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d581.5028070085532!2d18.555638289229044!3d54.339109685548095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd743751836fa3%3A0x514f97fb48e7de9d!2sBudynek%20A%2C%20Jana%20Pa%C5%82ubickiego%206%2C%2080-175%20Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1658148179897!5m2!1spl!2spl" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="information">
+        <!-- <a class="mapPNG" href="https://goo.gl/maps/uqMwYjfQwJKVPte98">
+        </a> -->
         <div class="Box info">
-          <div class="infoText"><h2>information</h2></div>
-          <div class="address">
-            <i class="fas fa-map-marked"></i>
-            <div class="addressText">
-              <h2>Pałubickiego 6A</h2>
-              <h2>80-175 Gdańsk</h2>
-              <a href="https://goo.gl/maps/uqMwYjfQwJKVPte98">
-                <img class="mapPNG" src="../materials/Group2.png" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <input
-          type="text"
-          name="name"
-          placeholder="imie"
-          autocomplete="off"
-          class="Box name"
-          required
-        />
-
-        <input
-          type="text"
-          name="surname"
-          placeholder="nazwisko"
-          autocomplete="off"
-          class="Box surname"
-          required
-        />
-
-        <input
-          type="text"
-          name="email"
-          placeholder="xyz@email.com"
-          autocomplete="off"
-          class="Box email"
-          required
-        />
-
-        <input
-          type="text"
-          name="subject"
-          placeholder="tytuł"
-          autocomplete="off"
-          class="Box subject"
-          required
-        />
-
-        <textarea
-          type="text"
-          name="topic"
-          placeholder="temat"
-          autocomplete="off"
-          cols="25"
-          class="Box topic"
-          required
-          maxlength="2000"
-        ></textarea>
-        <div></div>
-        <input type="submit" value="Wyślij" class="sendBtn" />
-      </form>
-      <div class="floatinfo" id="floatinfo"></div>
+          <!-- <div class="addressText"> -->
+            <div>IBEREOLICA SP. Z O.O.</div>
+            <div>ul. Pałubickiego 6A</h2>
+            <div>80-175 Gdańsk</div>
+            <div>NIP: 585 140 19 31</div>
+            <div>KRS: 0000182365</div>
+        <!-- </div> -->
+      </div>
     </div>
   </body>
-  <script src="script/resize.js"></script>
+  <script src="../script/resize.js"></script>
 
   <script>
-    setInterval(runFunction, 1000);
+    // setInterval(runFunction, 1000);
 
-    function runFunction() {
-      if (screen.width <= 800 && screen.width < screen.height) {
-        document.location = "../m.index.html";
-      }
-    }
+    // function runFunction() {
+    //   if (screen.width <= 800 && screen.width < screen.height) {
+    //     document.location = "../m.index.html";
+    //   }
+    // }
     // ////////////////////////////// //
     // ----------PLAYGROUND---------- //
     // ////////////////////////////// //
@@ -170,4 +136,5 @@
         "px";
     }
   </script>
+  <script src="../script/menu.js"></script>
 </html>

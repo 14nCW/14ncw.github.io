@@ -6,66 +6,69 @@
   <link rel="stylesheet" href="../css/subpages/teamCSS.css" />
   <link rel="stylesheet" href="fontawesome\css\all.css" />
   <link rel="icon" href="materials/URIEL.svg" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../script/resize.js"></script>
   <title class="output"></title>
 
   <head> </head>
+  <!-- background="../materials/background.png" -->
+  <body>
+    <a class="logo" href="../index.html"
+      ><img src="../materials/URIEL_niebieskie.png" alt=""
+    /></a>
 
-  <body background="../materials/background.png">
-    <div class="background">
+    <video
+      class="video"
+      src="../materials/team/filmik na 50.mp4"
+      loop
+      autoplay
+      muted
+    ></video>
+
+    <div class="gradient">
+    </div>
+    <div class="turbine">
       <img src="../materials/windTurbine.png" alt="" />
     </div>
-    <div class="menu">
-      <nav>
-        <ul class="nav_links">
-          <a href="../subPages/aboutUs.html">
-            <li>o nas</li>
+    <nav class="menu">
+      <ul>
+        <li class="menu-content">
+          <a href="../subPages/aboutUs.html" class="active">
+            o nas
           </a>
-          <div class="dropdown">
-            <li>projekty</li>
-            <div class="dropdown-content">
-              <a href="https://www.bbfw.pl">
-                <img src="../materials/bbfw logo.svg" alt="" />
-              </a>
-              <a href="https://www.dkfw.pl">
-                <img src="../materials/dkfw logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <a href="../subPages/team.html">
-            <li>zespół</li>
-          </a>
-          <a href="../subPages/cooperation.html">
-            <li>współpraca</li>
-          </a>
-          <a href="../subPages/contact.html">
-            <li>kontakt</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
+        </li>
+        <li class="hide menu-content" id="projekty">
+          <a href="">projekty</a>
+          <ol>
+            <li id="dropdown"><a href="https://bbfw.pl">  bbfw</a></li>
+            <li><a href="https://www.dkfw.pl">dkfw</a></li>
+            <!-- <li class="controll"><a href="">projekty</a></li> -->
+          </ol>
+        </li>
+        <li class="menu-content">
+            <a href="../subPages/team.html" class="active">zespół
+            </a>
+          </li>
+          <li class="menu-content">
+            <a href="../subPages/cooperation.html">współpraca</a>
+          </li>
+          <li class="menu-content">
+            <a href="../subPages/contact.html">galeria
+            </a>
+          </li>
+          <li class="menu-content">
+            <a href="../subPages/contact.html">kontakt
+            </a>
+          </li>
+      </ul>
+    </nav>
     <div class="content">
-      <div class="title">
+      <!-- <div class="title">
         <h1><span>nasz zespół</span></h1>
-      </div>
+      </div> -->
       <section class="worker one">
-          <div class="coworker-img">
-            <img src="../materials/coworkers/coworker1.jpg" alt="" />
-          </div>
-          <div class="text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text ever
-            since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with
-            the release of Letraset sheets containing Lorem Ipsum passages, and
-            more recently with desktop publishing software like Aldus PageMaker
-            including versions of Lorem Ipsum.
-        </div>
-      </section>
-      <section class="worker two">
         <div class="coworker-img">
-          <img src="../materials/coworkers/coworker1.jpg" alt="" />
+          <img src="../materials/team/coworkers/coworker1.jpg" alt="" />
         </div>
         <div class="text">
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -77,13 +80,81 @@
           the release of Letraset sheets containing Lorem Ipsum passages, and
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
-      </div>
-    </section>
+        </div>
+      </section>
+
+      <section class="worker two">
+        <div class="coworker-img">
+          <img src="../materials/team/coworkers/coworker2.jpg" alt="" />
+        </div>
+        <div class="text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+      </section>
+
+      <section class="worker three">
+        <div class="coworker-img">
+          <img src="../materials/team/coworkers/coworker3.jpg" alt="" />
+        </div>
+        <div class="text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+      </section>
+
+      <section class="worker four">
+        <div class="coworker-img">
+          <img src="../materials/team/coworkers/coworker4.jpg" alt="" />
+        </div>
+        <div class="text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+      </section>
+
+      <section class="worker five">
+        <div class="coworker-img">
+          <img src="../materials/team/coworkers/coworker5.jpg" alt="" />
+        </div>
+        <div class="text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </div>
+      </section>
     </div>
   </body>
-  <script src="script/resize.js"></script>
+  <script src="../script/resize.js"></script>
 
-  <script>
+  <!-- <script>
     setInterval(runFunction, 1000);
 
     function runFunction() {
@@ -91,5 +162,7 @@
         document.location = "../m.index.html";
       }
     }
-  </script>
+  </script> -->
+  <script src="../script/menu.js"></script>
+
 </html>

@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.logo {
+  position: fixed;
+  top: 5vh;
+  left: 5vh;
+  z-index: 3;
+  width: 15vh;
+  /* height: 15vh; */
+  /* height: 10vh; */
+}
+
+.logo img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50vh;
+  margin-left: 25vw;
+  width: 70vw;
+  height: 100%;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 1em;
+  /* line-height: 2em; */
+  line-height: 160%;
+  text-align: center;
+  text-align: justify;
+  width: 40vw;
+  margin: auto;
+}
+
+.title {
+  /* margin-right: 5vw; */
+  padding-top: 10%;
+  padding-bottom: 5%;
+  height: 1vh;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  height: min-content;
+}
+
+.video {
+  position: fixed;
+  top: 0;
+  /* width: max-content; */
+  /* height: max-content; */
+  /* scale: 2; */
+  z-index: 1;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.gradient {
+  position: fixed;
+  height: 53vh;
+  /* height: 63vh; */
+  background: rgb(0, 50, 91);
+  background: linear-gradient(180deg, #2a4999 0%, rgb(112, 146, 172) 99%);
+  width: 100%;
+  bottom: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: max-content;
+  height: max-content;
+  scale: 2;
+  z-index: -2;
+}
+
+.turbine {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  object-fit: cover;
+}
+
+.background img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 3vh;
+  /* color: #414141; */
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+h1 span {
+  background-color: rgba(42, 73, 153, 0.56);
+  border-radius: 10px;
+  padding-inline: 10px;
+}
+
+/*
+  /""""""""""""""""""""""""""""""""""""""\ 
+ |                  menu                  |
+  \,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,/ 
+*/
+
+.menu {
+  position: fixed;
+  /* width: 70vw; */
+  top: 12.1vh;
+  right: 0;
+  z-index: 2;
+}
+
+ul {
+  align-content: center;
+  display: inline-flex;
+  right: 0;
+}
+
+nav.menu a {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.menu-content {
+  text-decoration: none;
+  font-size: 1em;
+  list-style: none;
+  background-color: rgba(42, 73, 153, 0.56);
+  text-align: center;
+  align-items: center;
+  padding: 1vh 3vw 1vh 3vw;
+}
+
+ol li {
+  text-decoration: none;
+  font-size: 1em;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+.hide ol {
+  text-align: center;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  display: none;
+  /* display: block; */
+  position: absolute;
+  list-style-type: none;
+  top: calc(2vh + 1em + 0.4vh);
+  background-color: rgba(42, 73, 153, 0.56);
+  margin: 0 -3vw 0 -3vw;
+}
+
+.hide ol li {
+  padding: 1vh 0 1vh 0;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show the dropdown menu on hover */
+.hide:hover ol {
+  display: block;
+}
+
+.controll {
+  /* display: none; */
+}
+
+/* TEST MENU */

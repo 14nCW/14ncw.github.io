@@ -5,7 +5,7 @@
 }
 
 .content .text {
-  font-family: "montserrat";
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   font-size: 1.5vh;
   line-height: 2vh;
@@ -17,7 +17,7 @@
 
 h3 {
   font-size: 2vh;
-  font-family: "montserrat";
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   text-align: justify;
 }
@@ -26,9 +26,4 @@ h3 {
   font-weight: bold;
   padding-left: 2vw;
   padding-bottom: 2vh;
-}
-
-.answer h3 {
-  padding-left: 5vw;
-  padding-right: 10vw;
 }

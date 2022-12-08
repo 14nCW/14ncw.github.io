@@ -6,152 +6,144 @@
   <link rel="stylesheet" href="../css/subpages/aboutusCSS.css" />
   <link rel="stylesheet" href="../fontawesome\css\all.css" />
   <link rel="icon" href="../materials/URIEL.svg" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
   <title class="output"></title>
 
   <head> </head>
+  <body>
+    <a class="logo" href="../index.html">
+      <img src="../materials/URIEL_niebieskie.png" alt="" />
+    </a>
 
-  <body background="../materials/background.png">
-    <div class="background">
+    <!-- <video
+      class="video"
+      src="../materials/aboutUs/filmik na 30.mp4"
+      loop
+      autoplay
+      muted
+    ></video> -->
+    <video
+      class="video"
+      src="../materials/aboutUs/Untitled.mp4"
+      loop
+      autoplay
+      muted
+    ></video>
+    <div class="gradient">
+
+    </div>
+    <div class="turbine">
       <img src="../materials/windTurbine.png" alt="" />
     </div>
-    <div class="menu">
-      <nav>
-        <ul class="nav_links">
-          <a href="../subPages/aboutUs.html">
-            <li>o nas</li>
-          </a>
-          <div class="dropdown">
-            <li>projekty</li>
-            <div class="dropdown-content">
-              <a href="https://www.bbfw.pl">
-                <img src="../materials/bbfw logo.svg" alt="" />
+
+      <nav class="menu">
+        <ul>
+          <li class="menu-content">
+            <a href="../subPages/aboutUs.html" class="active">
+              o nas
+            </a>
+          </li>
+          <li class="hide menu-content" id="projekty">
+            <a href="">projekty</a>
+            <ol>
+              <li id="dropdown"><a href="https://bbfw.pl">  bbfw</a></li>
+              <li><a href="https://www.dkfw.pl">dkfw</a></li>
+              <!-- <li class="controll"><a href="">projekty</a></li> -->
+            </ol>
+          </li>
+          <li class="menu-content">
+              <a href="../subPages/team.html">zespół
               </a>
-              <a href="https://www.dkfw.pl">
-                <img src="../materials/dkfw logo.svg" alt="" />
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/cooperation.html">współpraca</a>
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/contact.html">galeria
               </a>
-            </div>
-          </div>
-          <a href="../subPages/team.html">
-            <li>zespół</li>
-          </a>
-          <a href="../subPages/cooperation.html">
-            <li>współpraca</li>
-          </a>
-          <a href="../subPages/contact.html">
-            <li>kontakt</li>
-          </a>
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/contact.html">kontakt
+              </a>
+            </li>
         </ul>
       </nav>
-    </div>
-
-    <div class="gallery">
-      <div class="photo-1">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-2">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-3">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-4">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-5">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-6">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-      <div class="photo-7">
-        <img src="../materials/m.background.JPG" alt="" />
-      </div>
-    </div>
     <div class="content">
-      <div class="title">
-        <h1><span>słowem wstępu...</span></h1>
-      </div>
-      <div class="text">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+      <!-- <div class="title">
+        <h1><span>o nas</span></h1>
+      </div> -->
+      <div class="center-text">
+        <div class="text">
+         Ibereolica jest polską spółką należącą do Hiszpańskiej spółki Uriel
+         Renovables S.A. – wchodzącej w skład Grupy biznesowej rodziny Huarte,
+         która rozpoczęła swoją działalność w 1927r. Od tego czasu grupa jest
+          związana z najważniejszymi międzynarodowymi firmami z różnych sektorów
+          przemysłu. Uriel Renovables to spółka należąca do grupy zajmująca się
+          promocją, budową i eksploatacją projektów związanych z energią
+         odnawialną: wodną, wiatrową, słoneczną fotowoltaiczną i wytwarzaniem z
+           biogazu. Firma założona w 1988 roku jest obecna na arenie
+          międzynarodowej w Europie, Ameryce Północnej, Ameryce Południowej i na
+           Karaibach i promowała projekty o mocy ponad 400 MW w różnych
+          technologiach. Ibereolica jako część Uriel Renovables działa na polskim
+          rynku od 2003r. Obecnie spółka zarządza projektami farm wiatrowych o
+          całkowite mocy 165,6 MW składających się łącznie z 48 turbin. W ramach
+          swojej strategii Ibereolica nawiązuje partnerskie relacje z firmami
+          sektora odnawialnego w Polsce.
+        </div>
       </div>
       <div class="timeline">
         <div class="top-left">
-          <h2>1927</h2>
+          <h2>2003</h2>
         </div>
         <div class="top-right">
-          <div class="timeline-img">
-          </div>
+          <img class="timeline-img" src="/materials/aboutUs/timeline/2003.jpg"></img>
           <div class="timeline-text text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            Ibereolica Sp. z o.o. rozpoczyna swoją przygodę z energią
+            odnawialną. Aktualnie zarządza dwoma projektami o łącznej mocy
+            165,6MW składających się łącznie z 48 turbin. 
           </div>
         </div>
         <div class="middle-left">
-          <h2>19xx</h2>
+          <h2>1988</h2>
         </div>
         <div class="middle-right">
-          <div class="timeline-img">
-          </div>
+          <img class="timeline-img" src="/materials/aboutUs/timeline/1988.jpg"></img>
           <div class="timeline-text text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            Założenie spółki Uriel Renovables S.A. zajmującą się promocją,
+            budową i eksploatacją projektów związanych z energią odnawialną.
+            Firma działa na terenach Europy, Ameryki Północnej, Ameryki
+            Południowej i Karaibach. Promowała również projekty o mocy ponad
+            400MW.
           </div>
         </div>
         <div class="bottom-left">
-          <h2>19xx</h2>
+          <h2>1927</h2>
         </div>
         <div class="bottom-right">
-          <div class="timeline-img">
-          </div>
+          <img class="timeline-img" src="/materials/aboutUs/timeline/1927.png"></img>
           <div class="timeline-text text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+            Rozpoczęcie działalności grupy biznesowej Huarte w której skład
+            wchodzi między innymi hiszpańska spółka Uriel Renovables S.A.
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </div>
   </body>
-  <script src="script/resize.js"></script>
+  <script src="../script/resize.js"></script>
+  <script src="../script/menu.js"></script>
 
   <script>
-    setInterval(runFunction, 1000);
+    // setInterval(runFunction, 1000);
 
-    function runFunction() {
-      if (screen.width <= 800 && screen.width < screen.height) {
-        document.location = "../m.index.html";
-      }
-    }
+    // function runFunction() {
+    //   if (screen.width <= 800 && screen.width < screen.height) {
+    //     document.location = "../m.index.html";
+    //   }
+    // }
+
+
+
+    
   </script>
 </html>

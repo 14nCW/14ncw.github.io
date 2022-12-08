@@ -2,163 +2,47 @@
 
 .content {
   position: absolute;
-  top: 60vh;
-  width: 60vw;
+  display:block;
+  top: 45vh;
+  /* width: 60vw; */
   margin-left: 25vw;
   z-index: 2;
-  /* margin-right: 20vw;  */
+  height: 55vh;
+}
+
+.information {
+  /* position: relative; */
+  bottom: 0;
+  height: 20vh;
 }
 
 .content .Box.info {
-  font-family: "montserrat";
-  font-weight: 100;
-  font-size: 1.5vh;
-  line-height: 2vh;
-  height: 60%;
+  color: white;
+  position:absolute;
+  width: 50%;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  display: flex;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2vh;
+  /* font-weight: 100; */
+  line-height: 2.5vh;
+  /* height: 100%; */
+  background-color: rgba(97, 159, 221, 0.56);
   align-self: center;
-}
-
-.contactBox {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 4vh 4vh 4vh 4vh 15vh ;
-  
-  grid-column-gap: 2.5vw;
-  grid-row-gap: 1.5vw;
-}
-
-#contact h2 {
-  font-size: 1.5vh;
-  font-weight: normal;
-}
-
-::placeholder {
-  font-size: 1.5vh;
-  font-family: "montserrat";
   text-align: center;
-  font-weight: bold;
-}
-
-input {
-  padding: 1vh;
-  font-size: 1.5vh;
-  font-family: "montserrat";
-  text-align: center;
-  font-weight: bold;
-  border: none;
-  color: #666666;
-}
-
-textarea {
-  padding: 2vh;
-  font-size: 1.5vh;
-  resize: none;
-  font-family: "montserrat";
-  font-weight: bold;
-  border: none;
-  color: #666666;
-}
-
-textarea:focus, input:focus{
-  outline: none;
-}
-
-.Box {
-  border-radius: 0.7vh;
-  box-shadow: inset 0 0.5vh 0.5vw 0 rgba(66, 66, 66, 0.5);
-
-}
-
-.info {
-  grid-area: 1 / 1 / 6 / 2;
-}
-
-.name {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.surname {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.email {
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-.subject {
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-.topic {
-  grid-area: 5 / 2 / 6 / 3;
-}
-
-input .Box.topic{
-  font-size: 1.5vh;
-  font-family: "montserrat";
-  font-weight: bold;
-  border: none;
-  color: #666666;
-}
-
-.Box.info {
-  text-align: center;
-  background-color: white;
-}
-
-.Box.info .infoText {
-  padding-top: 1vh;
-  font-size: 1vh;
-  padding-bottom: 1vh;
-}
-
-.fas.fa-map-marked {
-  color: #ED002D;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .mapPNG {
-  position: relative;
-  width: 100%;
-  border-radius: 0 0 1.125vh 1.125vh;
-  top: 0.405vh;
-}
-
-/* send button */
-
-.sendBtn {
-  position: relative;
-  /* right: -22vw; */
-  width: 10vw;
-  background-color: #EAC76E;
-  border-radius: 1.35vh;
-}
-
-.sendBtn:hover {
-  animation: sendbtn-animation 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.sendBtn:not(hover) {
-  animation: sendbtn-animation-back 0.5s;
-}
-
-@keyframes sendbtn-animation {
-  from {
-    background-color: #eac76e;
-  } to {
-    background-color: #ed002d;
-    color: #eac76e;
-  }
-}
-
-@keyframes sendbtn-animation-back {
-  from {
-    background-color: #ed002d;
-  } to {
-    background-color: #eac76e;
-  }
-}
-
-.floatinfo  {
   position: absolute;
+  height: 100%;
+  width: 100%;
+  /* min-width: 70vw; */
+  /* width: 70vw; */
+  /* top: 0.405vh; */
+  /* bottom: 0; */
 }

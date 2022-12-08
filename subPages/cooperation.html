@@ -6,88 +6,102 @@
   <link rel="stylesheet" href="../css/subpages/coopetarionCSS.css" />
   <link rel="stylesheet" href="fontawesome\css\all.css" />
   <link rel="icon" href="materials/URIEL.svg" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="../script/resize.js"></script>
   <title class="output"></title>
 
   <head> </head>
 
-  <body background="../materials/background.png">
-    <div class="background">
+  <body>
+    <a class="logo" href="../index.html"
+      ><img src="../materials/URIEL_niebieskie.png" alt=""
+    /></a>
+
+    <video
+    class="video"
+      src="../materials/cooperation/filmik na 50.mp4"
+      loop
+      autoplay
+      muted
+    ></video>
+    <div class="gradient">
+    </div>
+    <div class="turbine">
       <img src="../materials/windTurbine.png" alt="" />
     </div>
-    <!-- <div id="scrollable"> -->
-      <div class="menu">
-        <nav>
-          <ul class="nav_links">
-            <a href="../subPages/aboutUs.html">
-              <li>o nas</li>
-            </a>
-            <div class="dropdown">
-              <li>projekty</li>
-              <div class="dropdown-content">
-                <a href="https://www.bbfw.pl">
-                  <img src="../materials/bbfw logo.svg" alt="" />
-                </a>
-                <a href="https://www.dkfw.pl">
-                  <img src="../materials/dkfw logo.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <a href="../subPages/team.html">
-              <li>zespół</li>
-            </a>
-            <a href="../subPages/cooperation.html">
-              <li>współpraca</li>
-            </a>
-            <a href="../subPages/contact.html">
-              <li>kontakt</li>
-            </a>
-          </ul>
-        </nav>
-      </div>
 
-      <div class="content">
-        <div class="title">
-          <h1><span>współpraca</span></h1>
+    <!-- <div id="scrollable"> -->
+      <nav class="menu">
+        <ul>
+          <li class="menu-content">
+            <a href="../subPages/aboutUs.html" class="active">
+              o nas
+            </a>
+          </li>
+          <li class="hide menu-content" id="projekty">
+            <a href="">projekty</a>
+            <ol>
+              <li id="dropdown"><a href="https://bbfw.pl">  bbfw</a></li>
+              <li><a href="https://www.dkfw.pl">dkfw</a></li>
+              <!-- <li class="controll"><a href="">projekty</a></li> -->
+            </ol>
+          </li>
+          <li class="menu-content">
+              <a href="../subPages/team.html">zespół
+              </a>
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/cooperation.html" class="active">współpraca</a>
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/contact.html">galeria
+              </a>
+            </li>
+            <li class="menu-content">
+              <a href="../subPages/contact.html">kontakt
+              </a>
+            </li>
+        </ul>
+      </nav>
+
+    <div class="content">
+      <div class="QiA">
+        <div class="question text">
+          <h3>czego szukamy?</h3>
         </div>
-        <div class="QiA">
-          <div class="question">
-            <h3>czego szukamy?</h3>
-          </div>
-          <div class="answer">
-            <h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </h3>
-          </div>
-        </div>
-        <div class="QiA">
-          <div class="question">
-            <h3>jak się skontaktować?</h3>
-          </div>
-          <div class="answer">
-            <h3>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </h3>
-          </div>
+        <div class="answer text">
+          <h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </h3>
         </div>
       </div>
+      <div class="QiA">
+        <div class="question text">
+          <h3>jak się skontaktować?</h3>
+        </div>
+        <div class="answer text">
+          <h3>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </h3>
+        </div>
+      </div>
+    </div>
     <!-- </div> -->
   </body>
   <script src="script/resize.js"></script>
@@ -119,4 +133,6 @@
       }
     }
   </script>
+    <script src="../script/menu.js"></script>
+
 </html>
