@@ -8,21 +8,38 @@
   <title class="output"></title>
 
   <head> </head>
-  <!-- background="materials/background.png" -->
+
   <body style="overflow-x: hidden; overflow-y: hidden">
-    <video
+    <!-- <video
       src="materials/main21x9.mp4"
       class="main_video"
       id="mainVideo"
       loop
       autoplay
-      muted></video>
-    <!-- <div class="background">
-      <img src="materials/background.png" alt="">
-    </div>-->
-    <div class="turbine" id="wiatrak">
+      muted></video> -->
+
+    <div class="turbine_wide" id="wiatrak">
+      <video
+        src="materials/main21x9.mp4"
+        class="main_video"
+        id="mainVideo"
+        loop
+        autoplay
+        muted></video>
       <img src="materials/windTurbine_test.png" alt="" />
     </div>
+
+    <div class="turbine" id="wiatrak">
+      <video
+        src="materials/main21x9.mp4"
+        class="main_video"
+        id="mainVideo"
+        loop
+        autoplay
+        muted></video>
+      <img src="materials/windTurbine.png" alt="" />
+    </div>
+
     <nav class="menu">
       <a class="logo"><img src="materials/URIEL_niebieskie.png" alt="" /></a>
       <ul>
@@ -52,7 +69,7 @@
       </ul>
     </nav>
   </body>
-  <script>
+  <!-- <script>
     var clientViewHeight = window.screen.height;
     var wysokoscWiatraka = document.getElementById("wiatrak").clientHeight;
     var video = document.getElementById("mainVideo");
@@ -65,7 +82,7 @@
       video.style.top = -video.clientHeight + wysokosc + "px";
       console.log(wysokosc);
     }
-  </script>
+  </script> -->
   <!-- <script src="script/resize.js"></script> -->
 
   <!-- <script>
