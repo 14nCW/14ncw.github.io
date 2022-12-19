@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
+  font-family: "Quicksand", sans-serif;
 }
 
 body {
@@ -50,19 +51,56 @@ body {
 
   .menu {
     width: 100%;
-    height: 2vh;
-    display: flex;
+    display: inline-flex;
+    justify-content: space-between;
     ul {
-      // float: right;
-      object-position: top right;
+      z-index: 2;
+      align-content: center;
+      display: inline-flex;
+      height: fit-content;
+      .menu-content a {
+        background-color: rgba(42, 73, 153, 0.56);
+        padding: 1vh 3vw 1vh 3vw;
+      }
+      li {
+        list-style: none;
+        vertical-align: middle;
+        a {
+          text-decoration: none;
+          padding: 0;
+        }
+      }
+      a:link {
+        color: white;
+      }
+      
+      a:visited {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a.active {
+        font-weight: bold;
+      }
+
+      .hide ol {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        display: none;
+        background-color: #fff;
+      }
+      .hide:hover ol {
+        display: block;
+        position: absolute;
+      }
     }
 
     .logo {
       z-index: 2;
-      object-position: top left;
-      flex-shrink: 0;
-      width: 10vw;
-      min-height: 100%;
+      max-width: 10vw;
     }
   }
 

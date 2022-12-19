@@ -10,6 +10,7 @@
   padding: 0;
   margin: 0;
   max-width: 100%;
+  font-family: "Quicksand", sans-serif;
 }
 body .turbine_wide {
   display: none;
@@ -36,18 +37,53 @@ body .turbine .main_video {
 }
 body .menu {
   width: 100%;
-  height: 2vh;
-  display: flex;
+  display: inline-flex;
+  justify-content: space-between;
 }
 body .menu ul {
-  object-position: top right;
+  z-index: 2;
+  align-content: center;
+  display: inline-flex;
+  height: fit-content;
+}
+body .menu ul .menu-content a {
+  background-color: rgba(42, 73, 153, 0.56);
+  padding: 1vh 3vw 1vh 3vw;
+}
+body .menu ul li {
+  list-style: none;
+  vertical-align: middle;
+}
+body .menu ul li a {
+  text-decoration: none;
+  padding: 0;
+}
+body .menu ul a:link {
+  color: white;
+}
+body .menu ul a:visited {
+  color: white;
+  text-decoration: none;
+}
+body .menu ul a.active {
+  font-weight: bold;
+}
+body .menu ul .hide ol {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  background-color: #fff;
+}
+body .menu ul .hide:hover ol {
+  display: block;
+  position: absolute;
 }
 body .menu .logo {
   z-index: 2;
-  object-position: top left;
-  flex-shrink: 0;
-  width: 10vw;
-  min-height: 100%;
+  max-width: 10vw;
 }
 @media screen and (min-width: 1720px) {
   body .turbine_wide {

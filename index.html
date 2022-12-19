@@ -10,14 +10,6 @@
   <head> </head>
 
   <body style="overflow-x: hidden; overflow-y: hidden">
-    <!-- <video
-      src="materials/main21x9.mp4"
-      class="main_video"
-      id="mainVideo"
-      loop
-      autoplay
-      muted></video> -->
-
     <div class="turbine_wide" id="wiatrak">
       <video
         src="materials/main21x9.mp4"
@@ -41,7 +33,9 @@
     </div>
 
     <nav class="menu">
-      <a class="logo"><img src="materials/URIEL_niebieskie.png" alt="" /></a>
+      <a class="logo">
+        <img src="materials/URIEL_niebieskie.png" alt="" />
+      </a>
       <ul>
         <li class="menu-content">
           <a href="../subPages/aboutUs.html"> o nas </a>
@@ -49,8 +43,8 @@
         <li class="hide menu-content" id="projekty">
           <a href="">projekty</a>
           <ol>
-            <li id="dropdown"><a href="https://bbfw.pl">bbfw</a></li>
-            <li><a href="https://www.dkfw.pl">dkfw</a></li>
+            <li class="dropdown"><a href="https://bbfw.pl">bbfw</a></li>
+            <li class="dropdown"><a href="https://www.dkfw.pl">dkfw</a></li>
             <!-- <li class="controll"><a href="">projekty</a></li> -->
           </ol>
         </li>
@@ -69,30 +63,4 @@
       </ul>
     </nav>
   </body>
-  <!-- <script>
-    var clientViewHeight = window.screen.height;
-    var wysokoscWiatraka = document.getElementById("wiatrak").clientHeight;
-    var video = document.getElementById("mainVideo");
-    setInterval(runFunction, 10);
-    console.log(wysokoscWiatraka);
-    console.log(clientViewHeight);
-
-    function runFunction() {
-      var wysokosc = document.getElementById("wiatrak").clientHeight / 2.5;
-      video.style.top = -video.clientHeight + wysokosc + "px";
-      console.log(wysokosc);
-    }
-  </script> -->
-  <!-- <script src="script/resize.js"></script> -->
-
-  <!-- <script>
-    setInterval(runFunction, 1000);
-
-    function runFunction() {
-      if (screen.width <= 800 && screen.width < screen.height) {
-        document.location = "m.index.html";
-      }
-    }
-  </script> -->
-  <script src="/script/menu.js"></script>
 </html>
